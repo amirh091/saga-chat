@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Fond dégradé violet/bleu -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="shine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fond arrondi -->
+  <rect width="512" height="512" rx="120" fill="url(#bg)"/>
+  
+  <!-- Bulle de chat stylisée -->
+  <path d="M 120 180 Q 120 140 160 140 L 352 140 Q 392 140 392 180 L 392 280 Q 392 320 352 320 L 220 320 L 160 380 L 160 320 Q 120 320 120 280 Z" 
+        fill="white" 
+        opacity="0.95"/>
+  
+  <!-- Trois points dans la bulle (animation de chat) -->
+  <circle cx="200" cy="230" r="18" fill="#667eea"/>
+  <circle cx="256" cy="230" r="18" fill="#764ba2"/>
+  <circle cx="312" cy="230" r="18" fill="#667eea"/>
+  
+  <!-- Effet de brillance en haut -->
+  <rect width="512" height="200" rx="120" fill="url(#shine)"/>
+</svg>

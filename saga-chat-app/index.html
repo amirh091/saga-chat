@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saga Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#312e81">
+    <link rel="icon" type="image/svg+xml" href="icon.svg">
+    <link rel="apple-touch-icon" href="icon.svg">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>💬 Saga Chat</h2>
+            <p class="status">🟢 Connecté en temps réel</p>
+        </div>
+        <div class="messages-area" id="messages-area">
+            <div class="welcome-message">
+                <p>👋 Bienvenue dans le chat !</p>
+                <small>Entre ton nom et envoie un message</small>
+            </div>
+        </div>
+        <div class="input-area">
+            <input type="text" id="nom-utilisateur" placeholder="Ton nom" value="Cheick">
+            <input type="text" id="message-input" placeholder="Écris un message..." autocomplete="off">
+            <button id="send-btn" title="Envoyer">➤</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
